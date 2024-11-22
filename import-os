@@ -1,0 +1,10 @@
+import os
+
+# This is your local file path
+local_file = "C:/Users/arsha/Desktop/apple/frens.html"
+
+# Convert it to an absolute file path
+absolute_file = os.path.abspath(local_file)
+
+# Generate the HTTP link
+link = f"file://{absolute_file}"
